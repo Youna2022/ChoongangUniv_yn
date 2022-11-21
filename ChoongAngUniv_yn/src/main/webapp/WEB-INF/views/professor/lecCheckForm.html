@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hello</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+<h2>출결관리</h2>
+<br>
+<div style="border-collapse: collapse; border: 1px solid grey; padding: 15px;">
+    <h3>컴퓨터 프로그래밍(2학년)</h3>
+    <p style="margin-bottom: 8px;">2022-11-14(월요일) 09:00 ~ 10:50 &nbsp; &nbsp;&nbsp; 공과대학 강의실 305호</p>
+    <div style="float:right; margin-bottom: 10px;">
+        <button type="button" class="btn btn-secondary btn-sm">목록보기</button>
+        <button type="button" class="btn btn-danger btn-sm">출결시작</button>
+        <button type="button" class="btn btn-dark btn-sm">수정하기</button>
+    </div>
+    <table class="table table-bordered table-sm" style="text-align: center;">
+        <thead class="table-light">
+        <tr>
+            <th scope="col">수강생</th>
+            <th scope="col">출석률</th>
+            <th scope="col">지각률</th>
+            <th scope="col">결석률</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td style="font-size: 18px"><b>26</b></td>
+            <td ><b style="font-size: 18px">0</b>%</td>
+            <td ><b style="font-size: 18px">0</b>%</td>
+            <td ><b style="font-size: 18px">0</b>%</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div style="margin: 16px 0;">
+    <button type="button" class="btn btn-sm" style="background-color: royalblue; color: white;">전체출석</button>
+    <button type="button" class="btn btn-sm" style="background-color: rebeccapurple; color: white;">전체지각</button>
+    <button type="button" class="btn btn-sm btn-danger">전체결석</button>
+</div>
+
+<table class="table table-bordered table-sm" >
+    <thead class="table-light">
+    <tr style="text-align: center;">
+        <th scope="col" style="vertical-align: middle;">학생정보</th>
+        <th scope="col">월요일 9:00~10:50<p style="font-size: 10px; font-width: light; margin-bottom: 0px;">출석: 0명 &nbsp; &#183 &nbsp; 지각: 0명 &nbsp; &#183 &nbsp; 결석: 0명</p></th>
+        <th scope="col">화요일 16:00~17:50<p style="font-size: 10px; font-width: light; margin-bottom: 0px;">출석: 0명 &nbsp; &#183 &nbsp; 지각: 0명 &nbsp; &#183 &nbsp; 결석: 0명</p></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td style="font-size: 18px display: inline;">
+            <div style="margin: 4px 12px 4px 8px; background-color: deepskyblue; height: 62px; width: 52px; float: left;"></div>
+            <div style="margin: 4px 0px;">
+                <p style="color: grey; margin-bottom: 2px;">강수빈</p>
+                <p style="font-size: 10px; margin:2px;">공과대학 컴퓨터전공</p>
+                <p style="font-size: 10px; margin:2px;">20211101</p>
+            </div>
+        </td>
+        <td style="text-align: center; color: darkgrey; vertical-align: middle;" >출석정보없음</td>
+        <td style="text-align: center; color: darkgrey; vertical-align: middle;" >출석정보없음</td>
+    </tr>
+    <tr>
+        <td style="font-size: 18px display: inline;">
+            <div style="margin: 4px 12px 4px 8px; background-color: deepskyblue; height: 62px; width: 52px; float: left;"></div>
+            <div style="margin: 4px 0px;">
+                <p style="color: grey; margin-bottom: 2px;">강수빈</p>
+                <p style="font-size: 10px; margin:2px;">공과대학 컴퓨터전공</p>
+                <p style="font-size: 10px; margin:2px;">20211101</p>
+            </div>
+        </td>
+        <td style="text-align: center; color: darkgrey; vertical-align: middle;" >출석정보없음</td>
+        <td style="text-align: center; color: darkgrey; vertical-align: middle;" >출석정보없음</td>
+    </tr>
+    <tr>
+        <td style="font-size: 18px display: inline;">
+            <div style="margin: 4px 12px 4px 8px; background-color: deepskyblue; height: 62px; width: 52px; float: left;"></div>
+            <div style="margin: 4px 0px;">
+                <p style="color: grey; margin-bottom: 2px;">강수빈</p>
+                <p style="font-size: 10px; margin:2px;">공과대학 컴퓨터전공</p>
+                <p style="font-size: 10px; margin:2px;">20211101</p>
+            </div>
+        </td>
+        <td style="text-align: center; color: darkgrey; vertical-align: middle;" >출석정보없음</td>
+        <td style="text-align: center; color: darkgrey; vertical-align: middle;" >출석정보없음</td>
+    </tr>
+    <tr>
+        <td style="font-size: 18px display: inline;">
+            <div style="margin: 4px 12px 4px 8px; background-color: deepskyblue; height: 62px; width: 52px; float: left;"></div>
+            <div style="margin: 4px 0px;">
+                <p style="color: grey; margin-bottom: 2px;">강수빈</p>
+                <p style="font-size: 10px; margin:2px;">공과대학 컴퓨터전공</p>
+                <p style="font-size: 10px; margin:2px;">20211101</p>
+            </div>
+        </td>
+        <td style="text-align: center; color: darkgrey; vertical-align: middle;" >출석정보없음</td>
+        <td style="text-align: center; color: darkgrey; vertical-align: middle;" >출석정보없음</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
